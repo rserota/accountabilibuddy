@@ -11,3 +11,7 @@ Let's tailor this just toward those in tech bootcamps.
 5. All Goals and Tasks have due dates. If a user hits a task or goal by said date, then the task/goal turns green on the main page. If they miss the due date once it turns orange and they can pick a new date. If they miss it again it turns red.
 6. Other users can then send emails as reminders/motivations. 
 
+thoughts?
+
+
+
