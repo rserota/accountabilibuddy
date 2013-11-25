@@ -1,2 +1,9 @@
+/log/*.log
+/tmp
+.DS_Store
+.idea/
+.sass-cache
+*~
 node_modules
-.DS_store
+*.out
+oauth.js
