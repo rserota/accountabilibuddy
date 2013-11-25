@@ -46,15 +46,8 @@ passport.deserializeUser(function(id, done) {
 // routes
 app.get('/', routes.index);
 app.get('/ping', routes.ping);
-app.get('/account', ensureAuthenticated, function(req, res){
-  User.findById(req.session.passport.user, function(err, user) {
-    if(err) { 
-      console.log(err); 
-    } else {
-      res.render('account', { user: user});
-    }
-  })
-})
+app.get('/account', ensureAuthenticated, routes.account);
+
 app.get('/auth/github',
   passport.authenticate('github'),
   function(req, res){
