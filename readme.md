@@ -17,13 +17,14 @@ thoughts?
 ### github oauth instructions
 
 1. create a file called "oauth.js" and add in the following code:
+	```javascript
+	var ids = {
+	  github: {
+	    clientID: 'get_your_own',
+	    clientSecret: 'get_your_own',
+	    callbackURL: "http://127.0.0.1:1337/auth/github/callback"
+	  }
+	}
 
-var ids = {
-  github: {
-    clientID: 'get_your_own',
-    clientSecret: 'get_your_own',
-    callbackURL: "http://127.0.0.1:1337/auth/github/callback"
-  }
-}
-
-module.exports = ids
+	module.exports = ids
+	```
